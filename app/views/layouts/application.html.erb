@@ -15,10 +15,10 @@
   <title><%= content_for?(:title) ? "SocialSci | #{yield(:title)}" : "Research Participants | SocialSci" %></title>
 
   <%= stylesheet_link_tag 'application' %>
-  <%= javascript_include_tag 'application %>
+  <%= javascript_include_tag 'application' %>
   <%= yield :head %>
 </head>
 <body>
-   <%= yield %>
+  <%= yield %>
 </body>
 </html>
