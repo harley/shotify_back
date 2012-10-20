@@ -1,5 +1,6 @@
 ShotifyBack::Application.routes.draw do
   root to: 'home#index'
+  get '/howto' => 'home#howto'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

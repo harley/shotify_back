@@ -42,7 +42,7 @@ h2.slogan {
     font-size: 35pt;
   }
 }
-ul.features {
+.features {
   color: #eee;
   background-color: rgba(0,0,0,0.5);
   padding: 1em;
@@ -53,10 +53,18 @@ ul.features {
   position: absolute;
   top: 210px;
   left: 20%;
+}
+
+ul.features li {
+  font-size: 18pt;
+  line-height: 28pt;
+  font-weight: bold;
+}
+.instructions {
+  width: 50%;
+  font-size: 18px;
   li {
-    font-size: 18pt;
-    line-height: 28pt;
-    font-weight: bold;
+    margin: 10px;
   }
 }
 .open-spotify {
