@@ -8,24 +8,6 @@
     <h2 class="slogan">
       Turn your Spotify playlist into <span class="powerhour">a Power Hour Mix</span>
     </h2>
-    <div class="features instructions">
-      If you like this, we will polish the app and submit to Spotify for a review.
-      In the meantime, please follow the following steps to install the app:
-      <ol>
-        <li>Go to <%= link_to "Spotify", "https://developer.spotify.com/technologies/apps/#developer-account" %> and login with your Spotify account. You need to check a box to make your account a <strong>Developer</strong> account before you can install 3rd party apps</li>
-        <li>Quit and reopen Spotify. You should see an additional menu item "Develop" on the application's menu bar</li>
-        <li><%= link_to "Download", "https://dl.dropbox.com/shz/pkk6s101qpe00jx/2im6gAh8oj/shotify?top_level_offset=24" %> our <strong>Shotify</strong> app</li>
-        <li>
-          Create the following folder if you haven't already:
-          <ul>
-            <li>~/Spotify (Mac OS X and Linux)</li>
-            <li>“My Documents\Spotify” (Windows)</li>
-          </ul>
-        </li>
-        <li>Unzip and move our shotify app folder into the above folder</li>
-        <li>In Spotify's Search bar, type "spotify:app:shotify"</li>
-        <li>You should be good to go! <%= mail_to 'shotify@toch.im', 'Email us', encode: "javascript" %> and we will respond super quickly!</li>
-      </ol>
-    </div>
+    <%= render 'howto' %>
   </div>
 </div>

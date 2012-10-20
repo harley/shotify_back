@@ -8,14 +8,22 @@
     <h2 class="slogan">
       Turn your Spotify playlist into <span class="powerhour">a Power Hour Mix</span>
     </h2>
-    <ul class="features">
-      <li>Load a playlist</li>
-      <li>New song every minute</li>
-      <li>One drink per minute!</li>
-      <li>For ONE WHOLE HOUR!</li>
-    </ul>
-    <div class="open-spotify">
-      <%= link_to "Open in Spotify", '#', class: 'btn btn-success btn-large', onclick: "alert('Coming Soon!!! ;-)'); return false" %>
+    <div id="page1">
+      <ul class="features">
+        <li>Load a playlist</li>
+        <li>New song every minute</li>
+        <li>One drink per minute!</li>
+        <li>For ONE WHOLE HOUR!</li>
+      </ul>
+      <div class="open-spotify">
+        <%= link_to "Give It A Try!", '#', class: 'btn btn-success btn-large', onclick: '$("#page1").fadeOut();$("#page2").fadeIn(); return false' %>
+      </div>
+    </div>
+    <div id="page2" style="display:none">
+      <%= render 'howto' %>
+      <div class="why-spotify">
+        <%= link_to "Why Shotify?", '#', class: 'btn btn-info btn-large', onclick: '$("#page2").fadeOut();$("#page1").fadeIn(); return false' %>
+      </div>
     </div>
   </div>
 </div>
