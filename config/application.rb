@@ -15,9 +15,9 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module ShotifyBackbend
+module ShotifyBack
   class Application < Rails::Application
-    
+
     config.generators do |g|
       g.test_framework :rspec, :fixture => true, :views => false
       g.integration_tool :rspec, :fixture => true, :views => true

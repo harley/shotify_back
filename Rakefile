@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ShotifyBackbend::Application.load_tasks
+ShotifyBack::Application.load_tasks
