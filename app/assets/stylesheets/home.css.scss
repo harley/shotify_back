@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1#header {
+h1.header {
   background-color: white;
   padding: 0;
   margin: 0;
@@ -22,8 +22,9 @@ h1#header {
   width: 100%;
   min-height: 100%;
   position: relative;
-  padding-top: 50px;
+  padding-top: 30px;
   border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 
 img.logo {
@@ -50,40 +51,54 @@ h2.slogan {
   border-radius: 18px;
 
   text-shadow: 0 0 8px rgba(0,0,0,1);
-  position: absolute;
-  top: 210px;
-  left: 20%;
+  margin-top: 20px;
+  margin-left: 20%;
 }
 
+ul.features {
+  width: 310px;
+}
 ul.features li {
   font-size: 18pt;
   line-height: 28pt;
   font-weight: bold;
 }
 .instructions {
-  width: 50%;
   font-size: 18px;
+  margin-left: 0;
   li {
     margin: 10px;
   }
 }
 .open-spotify {
   font-family: "Fontdiner Swanky", "Open Sans", Helvetica, Arial, sans-serif;
-  text-align: right;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 640px;
   .btn {
     font-size: 18pt;
     padding: 1em;
+  }
+  text-align: right;
+  .btn {
+    margin-right: 100px;
+    margin-top: 60px;
   }
 }
 .why-spotify {
   font-family: "Fontdiner Swanky", "Open Sans", Helvetica, Arial, sans-serif;
   text-align: right;
-  margin-top: 470px;
   margin-left: auto;
   margin-right: auto;
-  width: 750px;
+  margin-top: 20px;
+}
+
+#video-box {
+  margin: 0 auto;
+  width: 640px;
+  height: 295px;
+  text-align: center;
+  margin-top: 30px;
+  border: 5px solid rgba(0, 0, 0, .5);
+  padding: 0;
+}
+#page1, #page2 {
+  position: relative;
 }
