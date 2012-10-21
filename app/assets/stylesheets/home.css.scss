@@ -51,7 +51,7 @@ h2.slogan {
   border-radius: 18px;
 
   text-shadow: 0 0 8px rgba(0,0,0,1);
-  margin-top: 20px;
+  margin-top: 0;
   margin-left: 20%;
 }
 
@@ -66,8 +66,11 @@ ul.features li {
 .instructions {
   font-size: 18px;
   margin-left: 0;
+  ol > li {
+    margin: 15px;
+  }
   li {
-    margin: 10px;
+    line-height: 22px;
   }
 }
 .open-spotify {
@@ -79,7 +82,7 @@ ul.features li {
   text-align: right;
   .btn {
     margin-right: 100px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 .why-spotify {
@@ -95,10 +98,14 @@ ul.features li {
   width: 640px;
   height: 295px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   border: 5px solid rgba(0, 0, 0, .5);
   padding: 0;
 }
 #page1, #page2 {
   position: relative;
+}
+code {
+  white-space: nowrap;
+  text-shadow: none;
 }
