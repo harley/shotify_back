@@ -38,5 +38,8 @@ mixpanel.init("9ccb0bc3041ca070ecf0c49d7206342f");</script>
 </head>
 <body>
   <%= yield %>
+  <% if content_for?(:javascripts_last) %>
+    <%= yield :javascripts_last %>
+  <% end %>
 </body>
 </html>

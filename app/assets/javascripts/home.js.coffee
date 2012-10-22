@@ -1,3 +1,9 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+$ ->
+  $("#give-it-a-try").click ->
+    $("#page1, #video-box").fadeOut()
+    $("#page2").fadeIn()
+    false
+  $("#why-shotify").click ->
+    $("#page2").fadeOut()
+    $("#page1,#video-box").fadeIn()
+    false

@@ -21,7 +21,7 @@
           </div>
           <div class="span6">
             <div class="open-spotify">
-              <%= link_to "Give It A Try!", '#', class: 'btn btn-success btn-large', onclick: '$("#page1, #video-box").fadeOut();$("#page2").fadeIn(); return false' %>
+              <%= link_to "Give It A Try!", '#', class: 'btn btn-success btn-large', id: 'give-it-a-try' %>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
         <%= render 'howto' %>
         <div style="clear:both"></div>
         <div class="why-spotify">
-          <%= link_to "Why Shotify?", '#', class: 'btn btn-info btn-large', onclick: '$("#page2").fadeOut();$("#page1,#video-box").fadeIn(); return false' %>
+          <%= link_to "Why Shotify?", '#', class: 'btn btn-info btn-large', id: 'why-shotify' %>
         </div>
       </div>
       <div id="video-box">
@@ -45,3 +45,10 @@
     <% end %>
   </h1>
 </div>
+
+<% content_for :javascripts_last do %>
+  <script type="text/javascript" charset="utf-8">
+  mixpanel.track_links('a#give-it-a-try', 'clicked "Give It A Try!"')
+  mixpanel.track_links('a#why-shotify', 'clicked "Why Shotify?"')
+  </script>
+<% end %>
