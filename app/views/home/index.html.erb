@@ -1,3 +1,4 @@
+<div class="page-expander">
 <div class="page-container">
   <h1 class="header">
     <%= link_to root_url do %>
@@ -11,15 +12,18 @@
     <div class="container">
       <div id="page1" class="clearfix">
         <div class="row-fluid">
-          <div class="span6">
-            <ul class="features">
-              <li>Load a playlist</li>
-              <li>New song every minute</li>
-              <li>One shot per minute!</li>
-              <li>For ONE WHOLE HOUR!</li>
-            </ul>
+          <div class="span7">
+            <div class="features summary">
+              <ul>
+                <li>Load a playlist</li>
+                <li>New song every minute</li>
+                <li>One shot per minute!</li>
+                <li>For ONE WHOLE HOUR!</li>
+              </ul>
+              <div class="alternative">Or just use it as a playlist sampler</div>
+            </div>
           </div>
-          <div class="span6">
+          <div class="span5">
             <div class="open-spotify">
               <%= link_to "Give It A Try!", '#', class: 'btn btn-success btn-large', id: 'give-it-a-try' %>
             </div>
@@ -37,13 +41,19 @@
         <iframe src="http://player.vimeo.com/video/52312526" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       </div>
     </div>
-    <div style="clear:both"></div>
+    <div style="clear:both;height: 20px"></div>
+    <div class="footer-inner">
+      <%= link_to "shotify.us", "http://shotify.us", class: 'label label-inverse' %>
+      <%= link_to "facebook", "http://facebook.com/shotify.us", class: 'label label-info' %>
+      <%= link_to "twitter", "http://twitter.com/shotify", class: 'label label-success' %>
+    </div>
   </div>
-  <h1 class="header">
+  <h1 class="header footer">
     <%= link_to root_url do %>
       <%= image_tag "logo.png", class: 'logo' %>
     <% end %>
   </h1>
+</div>
 </div>
 
 <% content_for :javascripts_last do %>
