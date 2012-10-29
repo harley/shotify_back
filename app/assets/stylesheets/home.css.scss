@@ -10,13 +10,9 @@ h1.header {
   text-align: center;
   background: image-url('music_pattern_2.png');
 }
-.page-expander {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
 .page-container {
   position: relative;
+  height: 100%;
 }
 #main-background {
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.3), inset 0 0 30px 30px rgba(0,0,0,0.35);

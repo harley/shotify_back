@@ -1,38 +1,38 @@
-    <h2 class="slogan">
-      Turn your Spotify playlist into <span class="powerhour">a Power Hour Mix</span>
-    </h2>
-    <div class="container">
-      <div id="page1" class="clearfix">
-        <div class="row-fluid">
-          <div class="span7">
-            <div class="features summary">
-              <ul>
-                <li>Load a playlist</li>
-                <li>New song every minute</li>
-                <li>One shot per minute!</li>
-                <li>For ONE WHOLE HOUR!</li>
-              </ul>
-              <div class="alternative">Or just use it as a playlist sampler</div>
-            </div>
-          </div>
-          <div class="span5">
-            <div class="open-spotify">
-              <%= link_to "Give It A Try!", '#', class: 'btn btn-success btn-large', id: 'give-it-a-try' %>
-            </div>
-          </div>
+<h2 class="slogan">
+  Turn your Spotify playlist into <span class="powerhour">a Power Hour Mix</span>
+</h2>
+<div class="container">
+  <div id="page1" class="clearfix">
+    <div class="row-fluid">
+      <div class="span7">
+        <div class="features summary">
+          <ul>
+            <li>Load a playlist</li>
+            <li>New song every minute</li>
+            <li>One shot per minute!</li>
+            <li>For ONE WHOLE HOUR!</li>
+          </ul>
+          <div class="alternative">Or just use it as a playlist sampler</div>
         </div>
       </div>
-      <div id="page2" style="display:none">
-        <%= render 'howto' %>
-        <div style="clear:both"></div>
-        <div class="why-spotify">
-          <%= link_to "Why Shotify?", '#', class: 'btn btn-info btn-large', id: 'why-shotify' %>
+      <div class="span5">
+        <div class="open-spotify">
+          <%= link_to "Give It A Try!", '#', class: 'btn btn-success btn-large', id: 'give-it-a-try' %>
         </div>
-      </div>
-      <div id="video-box">
-        <iframe src="http://player.vimeo.com/video/52312526" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       </div>
     </div>
+  </div>
+  <div id="page2" style="display:none">
+    <%= render 'howto' %>
+    <div class="why-spotify">
+      <%= link_to "Why Shotify?", '#', class: 'btn btn-info btn-large', id: 'why-shotify' %>
+    </div>
+  </div>
+  <div id="video-box">
+    <iframe src="http://player.vimeo.com/video/52312526" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+</div>
+
 <% content_for :javascripts_last do %>
   <script type="text/javascript" charset="utf-8">
   mixpanel.track_links('a#give-it-a-try', 'clicked "Give It A Try!"')

@@ -37,30 +37,27 @@
  </script>
 </head>
 <body>
-  <div class="page-expander">
-    <div class="page-container">
-      <h1 class="header">
-        <%= link_to root_url do %>
-          <%= image_tag "logo.png", class: 'logo' %>
-        <% end %>
-      </h1>
-      <div id="main-background">
-        <%= yield %>
-        <div style="clear:both;height: 35px"></div>
-        <div class="footer-inner">
-          <%= link_to "shotify.us", "http://shotify.us", class: 'label label-inverse' %>
-          <%= link_to "facebook", "http://facebook.com/shotify.us", class: 'label label-info' %>
-          <%= link_to "twitter", "http://twitter.com/shotify", class: 'label label-success' %>
-        </div>
+  <div class="page-container">
+    <h1 class="header">
+      <%= link_to root_url do %>
+        <%= image_tag "logo.png", class: 'logo' %>
+      <% end %>
+    </h1>
+    <div id="main-background">
+      <%= yield %>
+      <div style="clear:both;height: 35px"></div>
+      <div class="footer-inner">
+        <%= link_to "shotify.us", "http://shotify.us", class: 'label label-inverse' %>
+        <%= link_to "facebook", "http://facebook.com/shotify.us", class: 'label label-info' %>
+        <%= link_to "twitter", "http://twitter.com/shotify", class: 'label label-success' %>
       </div>
-      <h1 class="header footer">
-        <%= link_to root_url do %>
-          <%= image_tag "logo.png", class: 'logo' %>
-        <% end %>
-      </h1>
     </div>
+    <h1 class="header footer">
+      <%= link_to root_url do %>
+        <%= image_tag "logo.png", class: 'logo' %>
+      <% end %>
+    </h1>
   </div>
-
 
   <% if content_for?(:javascripts_last) %>
     <%= yield :javascripts_last %>
