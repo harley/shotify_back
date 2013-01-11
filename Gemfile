@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
 gem 'thin' # use thin for both development and production for now
 
 # Bundle edge Rails instead:
